@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Prytanée Militaire</title>
+    <title>PMK-MALI</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{('frontend/images/favicon.png')}}" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="{{asset('frontend/css/slick.css')}}">
@@ -44,7 +44,7 @@
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{asset('frontend/css/responsive.css')}}">
 
-    {{-- <style>
+    <style>
         .form_title {
             position: relative !important;
             left: -15px !important;
@@ -145,11 +145,11 @@
         .button-21-red:focus:not(:active) {
             box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
         }
-    </style> --}}
+    </style>
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-   {{--  @if(Session::has('flash_notification'))
+    @if(Session::has('flash_notification'))
         <!-- Pull in jQuery from CDN if not already loaded -->
         <script>window.jQuery || document.write("<script src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'><\/script>")</script>
         <!-- Pull in Toastr CSS and JS from CDN to be always up2date -->
@@ -164,7 +164,7 @@
             });
         </script>
         {{ Session::forget('flash_notification') }}
-    @endif --}}
+    @endif
 </head>
 
 <body>

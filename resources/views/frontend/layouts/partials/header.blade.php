@@ -1,4 +1,4 @@
- <header id="header-part">
+<header id="header-part">
 
     <div class="header-top d-none d-lg-block">
         <div class="container">
@@ -15,7 +15,7 @@
                     <div class="header-opening-time text-lg-right text-center">
                         <p>
                             Horaires d'ouverture : Du lundi au samedi - de 8 h à 17 h
-                            |  {{-- <a href="{{route('dashboard.admin')}}" style="color: #fff"> Connexion</a> --}}
+                            |  <a href="{{route('dashboard.admin')}}" style="color: #fff"> Connexion</a>
                         </p>
                     </div>
                 </div>
@@ -41,11 +41,11 @@
                             </div>
                             <div class="cont">
                                 <p>Besoin d'aide ? appelez-nous au </p>
-                                <span>(+223) 66 79 16 48</span>
+                                <span>(+223) 78 86 20 65</span>
                             </div>
                         </div>
                         <div class="button float-left">
-                            <a href="{{ route('dashboard') }}" class="main-btn">S'inscrire maintenant</a>
+                            <a href="{{route('pre-inscription')}}" class="main-btn">S'inscrire maintenant</a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="#">Catalogue de Formations</a></li>
                                         <li><a href="#">Information et Orientation</a></li>
-                                        <li><a href="{{-- {{route('pre-inscription')}} --}}">Pré-inscription</a></li>
+                                        <li><a href="{{route('pre-inscription')}}">Pré-inscription</a></li>
                                         <li><a href="#">Scolarité et paiement</a></li>
                                         <li><a href="#">Calendrier Académique</a></li>
                                     </ul>
@@ -120,9 +120,9 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{-- {{route('contact')}} --}}">Contact</a>
+                                    <a href="{{route('contact')}}">Contact</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{-- {{route('contact')}} --}}">Contactez-nous</a></li>
+                                        <li><a href="{{route('contact')}}">Contactez-nous</a></li>
                                         <li><a href="#">Géolocalisation</a></li>
                                     </ul>
                                 </li>
