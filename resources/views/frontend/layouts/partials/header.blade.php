@@ -87,45 +87,70 @@
                                     <a class="@if(Request::route()->getName()==='accueil') active @endif" href="/">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Ecole</a>
+                                    <a href="#">À propos</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Mot du Directeur</a></li>
-                                        <li><a href="#">Présentation</a></li>
-                                        <li><a href="#">Organes de fonctionnement </a></li>
-                                        <li><a href="#">Prix et distinctions</a></li>
-                                        <li><a href="#">Agréments et Autorisations</a></li>
+                                        <li><a href="#">Mot du Commandant</a></li>
+                                        <li><a href="#">Historique</a></li>
+                                        <li><a href="#">Mission et Vision </a></li>
+                                        <li><a href="#">Organigramme</a></li>
+                                        <li><a href="#">Installations</a></li>
                                         <li><a href="#">Partenaires</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Formations</a>
+                                    <a href="#">Programmes</a>
                                     <ul class="sub-menu">
+                                        <li><a href="#">Formation de Base</a></li>
                                         <li><a href="#">Catalogue de Formations</a></li>
                                         <li><a href="#">Information et Orientation</a></li>
-                                        <li><a href="{{route('pre-inscription')}}">Pré-inscription</a></li>
-                                        <li><a href="#">Scolarité et paiement</a></li>
+                                        <li><a href="#">Scolarité </a></li>
                                         <li><a href="#">Calendrier Académique</a></li>
+                                        <li><a href="#">Collaborations académiques</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Espace Elève</a>
+                                    <a href="#">Vie Militaire</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Cours en ligne</a></li>
-                                        <li><a href="#">Stages & Emploi</a></li>
-                                        <li><a href="#">Vie Associative</a></li>
+                                        <li><a href="#">Discipline et Régulations</a></li>
+                                        <li><a href="#">Vie en Caserne</a></li>
+                                        <li><a href="#">Activités physiques et sportives</a></li>
+                                        <li><a href="#">Événements et cérémonies</a></li>
+                                        <li><a href="#">Code d'Honneur</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Espace Enseignant</a>
+                                    <a href="#">Services</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Corps Professoral</a></li>
-                                        <li><a href="#">Réjoindre notre équipe</a></li>
+                                        <li><a href="#">Bibliothèque</a></li>
+                                        <li><a href="#">Mess et Cantine</a></li>
+                                        <li><a href="#">Santé et Bien-être</a></li>
+                                        <li><a href="#">Soutien psychologique</a></li>
+                                        <li><a href="#">Infrastructures de sport</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Anciens élèves</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Réseau des anciens</a></li>
+                                        <li><a href="#">Témoignages </a></li>
+                                        <li><a href="#">Réunions et événements </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Admissions</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Procédure d'admission </a></li>
+                                        <li><a href="#">Critères de sélection </a></li>
+                                        <li><a href="{{route('pre-inscription')}}">Formulaire d'inscription </a></li>
+                                        <li><a href="#">Résultats du Concours </a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#">Actualités</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">évènements</a></li>
+                                        <li><a href="#">Communiqués</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -133,6 +158,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="#">Photos</a></li>
                                         <li><a href="#">Vidéos</a></li>
+                                        <li><a href="#">Archive document</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">

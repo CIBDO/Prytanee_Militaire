@@ -3844,6 +3844,6 @@ p.form-message.error {
     padding: 8px 20px;
     background: #e0bb7c;
     color: #fff;
-    clip-path: polygon(00.85% 0 0.100% 100%.0 100%);
+    clip-path: polygon(0 0.85% 0 0.100% 100%.0 100%);
     font-weight: 600;
 }
