@@ -6,16 +6,16 @@
                 <div class="col-lg-6">
                     <div class="header-contact text-lg-left text-center">
                         <ul>
-                            <li><img src="frontend/images/all-icon/map.png" alt="icon"><span>ACI 2000, BAMAKO-MALI</span></li>
-                            <li><img src="frontend/images/all-icon/email.png" alt="icon"><span>contact@lyceeinformatique.ml</span></li>
+                            <li><img src="frontend/images/all-icon/map.png" alt="icon"><span>Kati-Mali</span></li>
+                            <li><img src="frontend/images/all-icon/email.png" alt="icon"><span>contact@informatique.ml</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="header-opening-time text-lg-right text-center">
                         <p>
-                            Horaires d'ouverture : Du lundi au samedi - de 8 h à 17 h
-                            |  <a href="{{route('dashboard.admin')}}" style="color: #fff"> Connexion</a>
+                            Horaires d'ouverture : Du lundi au Dimanche - de 8 h à 17 h
+                            | <a href="{{route('dashboard.admin')}}" style="color: #fff"> Connexion</a>
                         </p>
                     </div>
                 </div>
@@ -34,23 +34,40 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
-                    <div class="support-button float-right d-none d-md-block">
-                        <div class="support float-left">
-                            <div class="icon">
-                                <img src="frontend/images/all-icon/support.png" alt="icon">
+                    <div class="support-button d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="support d-flex align-items-center mr-3">
+                                <div class="icon">
+                                    <img src="frontend/images/all-icon/support.png" alt="icon">
+                                </div>
+                                <div class="cont ml-2">
+                                    <p class="m-0">Besoin d'aide ? appelez-nous au</p>
+                                    <span>(+223) 78 86 20 65</span>
+                                </div>
                             </div>
-                            <div class="cont">
-                                <p>Besoin d'aide ? appelez-nous au </p>
-                                <span>(+223) 78 86 20 65</span>
+                            <div class="support d-flex align-items-center mr-3">
+                                <div class="icon">
+                                    <img src="frontend/images/all-icon/support.png" alt="icon">
+                                </div>
+                                <div class="cont ml-2">
+                                    <p class="m-0">Besoin d'aide ? appelez-nous au</p>
+                                    <span>(+223) 78 86 20 65</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="button float-left">
-                            <a href="{{route('pre-inscription')}}" class="main-btn">S'inscrire maintenant</a>
+                        <div class="button">
+                            <a href="{{ route('pre-inscription') }}" class="main-btn">S'inscrire maintenant</a>
                         </div>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+
+            </div>
+        <div class="scrolling-text-container">   
+        <span>Flash</span>
+        <marquee behavior=""direction="left">Soyez les bienvenus sur notre plateforme </marquee>
+        </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
     </div> <!-- header logo support -->
 
     <div class="navigation">
@@ -68,10 +85,9 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
                                     <a class="@if(Request::route()->getName()==='accueil') active @endif" href="/">Accueil</a>
-
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">ECOLE</a>
+                                    <a href="#">Ecole</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Mot du Directeur</a></li>
                                         <li><a href="#">Présentation</a></li>
@@ -82,7 +98,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">FORMATIONS</a>
+                                    <a href="#">Formations</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Catalogue de Formations</a></li>
                                         <li><a href="#">Information et Orientation</a></li>
@@ -92,7 +108,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">ESPACE ELEVE</a>
+                                    <a href="#">Espace Elève</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Cours en ligne</a></li>
                                         <li><a href="#">Stages & Emploi</a></li>
@@ -133,7 +149,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-3 col-4">
                     <div class="right-icon text-right">
                         <ul>
-{{--                            <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>--}}
+                            {{-- <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>--}}
                         </ul>
                     </div> <!-- right icon -->
                 </div>
