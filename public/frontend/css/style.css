@@ -1149,12 +1149,12 @@ p {
 }
 
 .apply-color-1{
-    background-color: #07294d;
+    background-color: hsl(34, 4%, 31%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .apply-color-2{
-    background-color: #092e56;
+    background-color: hsl(34, 4%, 31%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -1208,14 +1208,14 @@ p {
 }
 .singel-course .thum .price span{
     font-size: 14px;
-    color: #07294d;
+    color: hsl(34, 4%, 31%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 55px;
     height: 55px;
     line-height: 55px;
     border-radius: 50%;
-    background-color: #ffc600;
+    background-color: #e0bb7c;
     text-align: center;
 }
 .singel-course .cont{
@@ -1234,7 +1234,7 @@ p {
 }
 .singel-course .cont ul li > i{
     font-size: 13px;
-    color: #ffc600;
+    color: #e0bb7c;
 }
 
 .singel-course .cont span{
@@ -1251,7 +1251,7 @@ p {
     transition: all 0.4s linear;
 }
 .singel-course .cont h4:hover{
-    color: #ffc600;
+    color: #e0bb7c;
 }
 
 .singel-course .course-teacher{
@@ -1275,12 +1275,12 @@ p {
 }
 .singel-course .course-teacher .name a h6{
     font-size: 15px;
-    color: #24486e;
+    color: hsl(34, 4%, 31%);
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
 .singel-course .course-teacher .name a:hover h6{
-    color: #ffc600;
+    color: #e0bb7c;
 }
 
 .singel-course .course-teacher .admin{
@@ -1355,7 +1355,7 @@ p {
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: rgba(7, 41, 77, 0.9);
+    background-color: hsl(34, 4%, 31%);
 }
 
 .video{
@@ -1368,7 +1368,7 @@ p {
     text-align: center;
     font-size: 24px;
     background-color: #ffc600;
-    color: #07294d;
+    color: hsl(34, 4%, 31%);
     border-radius: 50%;
 }
 
@@ -1487,7 +1487,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(7, 41, 77, 0.8);
+    background-color: hsl(34, 4%, 31%);
     opacity: 0;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
@@ -1519,7 +1519,7 @@ p {
 }
 .singel-publication .image .add-cart ul li a:hover{
     background-color: #ffc600;
-    color: #07294d;
+    color: hsl(34, 4%, 31%);
 }
 
 
@@ -1610,7 +1610,7 @@ p {
     text-align: center;
     background-color: #ffc600;
     border-radius: 50%;
-    color: #07294d;
+    color: hsl(34, 4%, 31%);
     font-size: 18px;
 }
 .singel-testimonial .testimonial-cont {
@@ -1681,7 +1681,7 @@ p {
     margin-right: 8px;
 }
 .singel-news .news-cont ul li a span{
-    color: #07294d;
+    color: hsl(34, 4%, 31%);
 }
 .singel-news .news-cont a{
     display: block;
@@ -1711,7 +1711,7 @@ p {
 ======================================================*/
 
 .footer-top{
-    background-color: #07294d;
+    background-color: hsl(34, 4%, 31%);
 }
 
 .footer-about {
@@ -1743,7 +1743,7 @@ p {
 }
 .footer-about ul li a:hover{
     background-color: #ffc600;
-    color: #021d3a;
+    color: hsl(34, 4%, 31%);
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
     
@@ -1813,7 +1813,7 @@ p {
 }
 
 .footer-copyright{
-    background-color: #021d3a;
+    background-color: hsl(34, 4%, 31%);
 }
 .footer-copyright .copyright p{
     color: #fff;
@@ -1841,7 +1841,7 @@ p {
 }
 .back-to-top:hover{
     color: #fff;
-    background-color: #021d3a;
+    background-color: hsl(34, 4%, 31%);
 }
 
 
@@ -1867,7 +1867,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(7, 41, 77, 0.6);
+    background-color: hsl(34, 4%, 31%);
     border-radius: 5px;
 }
 .category-2-items .singel-items .items-cont {

@@ -86,7 +86,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Bamako, Mali</p>
+                                        <p>Kati, Mali</p>
                                     </div>
                                 </div> <!-- singel address -->
                             </li>
