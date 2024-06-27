@@ -23,19 +23,25 @@ class AuthentController extends Controller
 
     public function authenticate(Request $request)
     {
-        $credentials = $request->only('identifiant', 'mot_de_passe');
+        $credentials = $request->only('login', 'password');
 
 //        if (auth()->attempt($credentials)) {
 //            return redirect()->intended('dashboard');
 //        }
-        if (Compte::where('identifiant',$request->identifiant)->exists()){
-            $compte = Compte::where('identifiant',$request->identifiant)->first();
-            if (Hash::check($request->mot_de_passe,$compte->mot_de_passe)){
-                Auth::loginUsingId($compte->id);
-                flash()->success('Connexion','Connexion réussie.');
-                return redirect()->route('dashboard.admin');
-            }
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            flash()->success('Connexion','Connexion réussie.');
+            return redirect()->intended('dashboard');
         }
+//        if (Compte::where('identifiant',$request->identifiant)->exists()){
+//            $compte = Compte::where('identifiant',$request->identifiant)->first();
+//            if (Hash::check($request->mot_de_passe,$compte->mot_de_passe)){
+//                Auth::loginUsingId($compte->id);
+//            dd($request->all(),Auth::id());
+//                flash()->success('Connexion','Connexion réussie.');
+//                return redirect()->route('dashboard.admin');
+//            }
+//        }
         flash()->error('Erreur','Identifiant ou mot de passe incorrect.');
         return redirect()->route('login');
     }

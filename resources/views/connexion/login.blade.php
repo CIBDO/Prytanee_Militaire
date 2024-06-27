@@ -148,10 +148,10 @@
     <h3>Connectez-vous ici</h3>
 
     <label for="username">Identifiant</label>
-    <input type="text" placeholder="Entrez votre identifiant" id="username" name="identifiant">
+    <input type="text" placeholder="Entrez votre identifiant" id="username" name="login">
 
     <label for="password">Mot de passe</label>
-    <input type="password" placeholder="Entrez votre mot de passe" id="password" name="mot_de_passe">
+    <input type="password" placeholder="Entrez votre mot de passe" id="password" name="password">
 
     <button>Connexion</button>
 {{--    <div class="social">--}}
