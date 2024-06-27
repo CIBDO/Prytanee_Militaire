@@ -1137,7 +1137,7 @@ h6 {
   transition: all 0.3s ease-out;
 }
 .fw-btn-fill:hover {
-  background: #0f3c63;
+  background: #026740;
 }
 .fw-btn-fill:focus {
   outline: none;
@@ -1214,7 +1214,7 @@ h6 {
   border: none;
 }
 .btn-hover-bluedark:hover {
-  background: #0f3c63;
+  background: #026740;
 }
 .btn-hover-yellow:hover {
   background: #ff9d01;
@@ -1287,7 +1287,7 @@ h6 {
   z-index: 9999999;
 }
 #scrollUp {
-  background-color: #0f3c63;
+  background-color: #026740;
   bottom: 20px;
   color: #ffffff;
   display: block;
@@ -1427,7 +1427,7 @@ ul {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .nav-bar-header-one {
-  background: linear-gradient(to right, #ff9d01, #f68a1e);
+  background: linear-gradient(to right, #067349, #067349);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1435,6 +1435,7 @@ ul {
   margin-top: -5px;
   margin-bottom: -5px;
   margin-left: -1rem;
+    border-bottom: solid 1px cadetblue;
 }
 @media only screen and (max-width: 767px) {
   .nav-bar-header-one {
@@ -1503,7 +1504,7 @@ ul {
   outline: none;
 }
 .nav-bar-header-two {
-  background: linear-gradient(to right, #ff9d01, #f68a1e);
+  background: linear-gradient(to right, #ff9d01, #ffeb3b);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2052,7 +2053,7 @@ ul {
   padding: 12px 25px;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item > .nav-link i:before {
-  color: #f68a1e;
+  color: #ffeb3b;
   font-size: 18px;
   margin-right: 15px;
   margin-left: 0;
@@ -2067,14 +2068,14 @@ ul {
   transition: all 0.3s ease-out;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .nav-link.menu-active {
-  background-color: #10273c;
+  background-color: #003e26;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .nav-link.menu-active span {
-  color: #f68a1e;
+  color: #ffeb3b;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu {
   display: none;
-  background-color: #10273c;
+  background-color: #003e26;
   padding: 10px 0;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu > .nav-item .nav-link {
@@ -2089,12 +2090,12 @@ ul {
   margin-right: 10px;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu > .nav-item .nav-link:hover {
-  background-color: #0f3c63;
+  background-color: #026740;
   color: #ffffff;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu > .nav-item .nav-link.menu-active {
-  background-color: #0f3c63;
-  color: #f68a1e;
+  background-color: #026740;
+  color: #ffeb3b;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu.sub-group-active {
   display: block;
@@ -2139,7 +2140,7 @@ ul {
   top: 0;
   bottom: 0;
   width: 18rem;
-  background-color: #0f3c63;
+  background-color: #026740;
   box-sizing: content-box;
   z-index: 10;
   -webkit-transition: all 0.3s ease-out;
@@ -2178,7 +2179,7 @@ ul {
 .sidebar-menu-two .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu {
   width: 26rem;
   display: none;
-  background-color: #10273c;
+  background-color: #003e26;
   padding: 12px 0;
   border-radius: 0px 4px 4px 0px;
   border-left: .4px solid #f0f1f3;
@@ -2204,7 +2205,7 @@ ul {
   margin-right: 10px;
 }
 .sidebar-menu-two .sidebar-menu-content .nav-sidebar-menu > .nav-item .sub-group-menu > .nav-item .nav-link:hover {
-  background-color: #0f3c63;
+  background-color: #026740;
   color: #ffffff;
 }
 .sidebar-menu-two .sidebar-menu-content .nav-sidebar-menu > .nav-item:hover {
@@ -3496,7 +3497,7 @@ ul {
   background-color: #304ffe;
 }
 .bg-blue-dark {
-  background-color: #0f3c63;
+  background-color: #026740;
 }
 .bg-yellow {
   background-color: #fbd540;
@@ -3565,7 +3566,7 @@ ul {
   background-color: #1565c0;
 }
 .sidebar-color {
-  background-color: #0f3c63;
+  background-color: #067349;
 }
 .bg-gradient-fb {
   background: -webkit-gradient(linear, left top, right top, from(#546ca9), to(#5c77bc));
@@ -3946,7 +3947,7 @@ ul {
   background-color: #417dfc;
 }
 .pseudo-bg-yellow:after {
-  background-color: #f68a1e;
+  background-color: #ffeb3b;
 }
 .pseudo-bg-red:after {
   background-color: #ff0000;
