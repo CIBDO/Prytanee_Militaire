@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-about mt-40">
                         <div class="logo">
-                            <a href="#"><img src="{{asset('frontend/images/logo.jpg')}}" alt="Logo"></a>
+                            <a href="#"><img src="{{asset('frontend/images/logo.png')}}" alt="Logo"></a>
                         </div>
                         <p style="text-align: justify">
                             Le Lycée informatique et internet Bill Gates de Bamako (LIIBIGA) accueille les meilleurs filles et garçons titulaires du Diplôme de fin d’Etudes Fondamentales (DEF) ou d’un diplôme équivalent désireux de préparer un baccalauréat professionnel en trois ans spécialisé en informatique et internet dans les conditions d’études les meilleures sur la base d’un test d’entrée.                         </p>

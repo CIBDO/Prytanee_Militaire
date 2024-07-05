@@ -146,21 +146,21 @@ p {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border: 1px solid #e0bb7c;
+	border: 1px solid #ffc600;
 	padding: 0 35px;
 	font-size: 16px;
-    font-family: 'Montserrat', Garamond;
-    font-weight: 700;
+	font-family: 'Montserrat', Garamond;
+	font-weight: 700;
 	line-height: 50px;
 	border-radius: 5px;
-    color: #2c2c2c;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-    background-color: #e0bb7c;
+	color: #000000;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+	background-color: #ffc600;
 }
 .main-btn:hover{
     color: #ffc600;
@@ -183,7 +183,7 @@ p {
     position: absolute;
     width: 38px;
     height: 4px;
-    background-color: #ffc600;
+    background-color: #dc3545;
     bottom: 0;
     left: 0;
 }
@@ -405,7 +405,7 @@ p {
 /*===== Header top =====*/
 
 .header-top{
-    background-color:  hsl(34, 4%, 31%);
+    background-color: #016a37;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -422,7 +422,7 @@ p {
 
 .header-contact ul li img{}
 .header-contact ul li span {
-	color: #dee2e6;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 400;
 	margin-left: 10px;
@@ -430,7 +430,7 @@ p {
 
 .header-opening-time{}
 .header-opening-time p {
-	color: #dee2e6;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -438,10 +438,9 @@ p {
 /*===== Header Logo support =====*/
 
 .header-logo-support{
-    border-bottom:3px solid hwb(0deg 4.89% 18.74%);
+    border-bottom: 2px solid #ffc600;
     /* margin-top: 10px; */
     margin: 0;
-    
 }
 
 .support-button{}
@@ -539,17 +538,16 @@ p {
     font-size: 14px;
     font-family: 'Montserrat', Garamond;
     font-weight: 700;
-    color: hsl(34, 4%, 31%);
+    color: hsl(0deg 0% 0%);
     text-transform: none;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
     padding: 25px 0;
-    
 }
 
 .navigation .navbar .navbar-nav > li > a.active,
 .navigation .navbar .navbar-nav > li > a:hover{
-    color: #e0bb7c;
+    color: #016a37;
 }
 
 .navigation .navbar .navbar-nav li .sub-menu{
@@ -989,7 +987,7 @@ p {
 }
 
 .category{
-    background-color: hsl(34, 4%, 31%);
+    background-color: #016a37;
     border-radius: 10px;
     margin-top: -150px;
     position: relative;
@@ -1000,7 +998,7 @@ p {
 }
 .category-text h2{
     font-size: 36px;
-    color: #e0bb7c;
+    color: #ffffff;
     padding: 0 50px;
 }
 
@@ -1149,12 +1147,12 @@ p {
 }
 
 .apply-color-1{
-    background-color: hsl(34, 4%, 31%);
+    background-color: #016a37;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .apply-color-2{
-    background-color: hsl(34, 4%, 31%);
+    background-color: #016a37;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -1355,7 +1353,8 @@ p {
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: hsl(34, 4%, 31%);
+    background-color: hsl(150.86deg 98.13% 20.98%);
+
 }
 
 .video{
@@ -1711,7 +1710,7 @@ p {
 ======================================================*/
 
 .footer-top{
-    background-color: hsl(34, 4%, 31%);
+    background-color: #016a37;;
 }
 
 .footer-about {
@@ -1813,7 +1812,7 @@ p {
 }
 
 .footer-copyright{
-    background-color: hsl(34, 4%, 31%);
+    background-color: #eab81c;
 }
 .footer-copyright .copyright p{
     color: #fff;
@@ -3831,19 +3830,41 @@ p.form-message.error {
 }
 
 .scrolling-text-container{
-    display: flex;
+    display: none;
     align-items: center;
-    background: #b8b8b8;
-    margin-top: 40px;
-
+    background: #ffffff;
+    margin-top: 15px;
+    border: solid 1.5px #016a37;
 }
 .scrolling-text-container span{
     position: relative;
     display: inline-block;
     flex-shrink: 0;
     padding: 8px 20px;
-    background: #e0bb7c;
+    background: #016a37;
     color: #fff;
     clip-path: polygon(0 0.85% 0 0.100% 100%.0 100%);
     font-weight: 600;
+}
+
+element.style {
+}
+img {
+    max-width: 30%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+element.style {
+}
+i, span, a {
+    display: inline-block;
+}
+a {
+    color: #e8eaed;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }

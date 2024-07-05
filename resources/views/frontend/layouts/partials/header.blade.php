@@ -29,7 +29,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="logo">
                         <a href="/">
-                            <img src="frontend/images/logo.jpg" alt="Logo">
+                            <img src="frontend/images/logo_p.png" alt="Logo" width="280" height="80">
                         </a>
                     </div>
                 </div>
@@ -75,7 +75,8 @@
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-9 col-8">
                     <nav class="navbar navbar-expand-lg">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -89,8 +90,8 @@
                                 <li class="nav-item">
                                     <a href="#">À propos</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Mot du Commandant</a></li>
-                                        <li><a href="#">Historique</a></li>
+                                        <li><a href="{{ route('presentation') }}">Mot du Commandant</a></li>
+                                        <li><a href="{{ route('historique')}}">Historique</a></li>
                                         <li><a href="#">Mission et Vision </a></li>
                                         <li><a href="#">Organigramme</a></li>
                                         <li><a href="#">Installations</a></li>

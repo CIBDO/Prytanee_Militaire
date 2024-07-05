@@ -19,7 +19,12 @@ class FrontendController extends Controller
     {
         return view('frontend.pages.accueil');
     }
-
+    public function presentation(){
+        return view('frontend.pages.apropos.presentation');
+    }
+    public function historique(){
+        return view('frontend.pages.apropos.historique');
+    }
     public function contact(){
         return view('frontend.pages.contact.contact');
     }

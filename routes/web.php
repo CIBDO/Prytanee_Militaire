@@ -50,7 +50,8 @@ Route::get('/', [FrontendController::class,'index'])->name('accueil');
 Route::get('/', [FrontendController::class,'index'])->name('accueil');
 
 Route::post('/pre-inscription', [FrontendController::class,'storePreInscription'])->name('pre-inscription.store');
-
+Route::get('/presentation', [FrontendController::class,'presentation'])->name('presentation');
+Route::get('/historique', [FrontendController::class,'historique'])->name('historique');
 Route::get('/contact', [FrontendController::class,'contact'])->name('contact');
 Route::get('eleves/paiement', [EtudiantController::class,'paiement'])->name('eleves.paiement')->middleware('auth');
 Route::post('eleves/paiement', [EtudiantController::class,'paiementPost'])->name('eleves.paiement.store')->middleware('auth');
