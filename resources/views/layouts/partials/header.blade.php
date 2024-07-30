@@ -3,8 +3,8 @@
     <div class="nav-bar-header-one">
         <div class="header-logo">
             <a href="#">
-                <img style="width: 50px" src="{{asset('frontend/images/logo.jpg')}}" alt="logo">
-                <span style="color: white;font-weight: bold;">LYCEE INFORMATIQUE & INTERNET</span>
+{{--                <img style="width: 50px" src="{{asset('frontend/images/logo.jpg')}}" alt="logo">--}}
+                <span style="color: white;font-weight: bold;">Prytanée Militaire de Kati</span>
             </a>
         </div>
         <div class="toggle-button sidebar-toggle">
