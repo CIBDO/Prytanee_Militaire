@@ -2,6 +2,9 @@
 
 namespace App\helpers;
 
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Str;
+
 class Helpers
 {
     static function formatMontant($montant): string
@@ -13,7 +16,9 @@ class Helpers
     {
         return date('d/m/Y', strtotime($date));
     }
-    static function appreciation($moyenne) {
+
+    static function appreciation($moyenne)
+    {
         if ($moyenne < 10) {
             return "Insuffisant";
         } elseif ($moyenne >= 10 && $moyenne < 12) {
@@ -29,11 +34,14 @@ class Helpers
         }
     }
 
-    static function formatDateV2($date) {
+    static function formatDateV2($date)
+    {
         $timestamp = strtotime($date);
         return date('H:i j F, Y', $timestamp);
     }
-    static function formatTimeAgo($date) {
+
+    static function formatTimeAgo($date)
+    {
         $timestamp = strtotime($date);
         $currentTime = time();
         $timeDifference = $currentTime - $timestamp;
@@ -53,6 +61,25 @@ class Helpers
         } else {
             $yearsAgo = floor($minutesAgo / 525600);
             return $yearsAgo . " years ago";
+        }
+    }
+
+    static function isMatchingRoute($prefixes = []): bool
+    {
+        // Nom de la route actuelle
+        $currentRouteName = Request::route()->getName();
+
+        // Vérifiez si le nom de la route commence par l'un des préfixes
+        $isMatchingRoute = collect($prefixes)->contains(function ($prefix) use ($currentRouteName) {
+            return Str::startsWith($currentRouteName, $prefix);
+        });
+
+        if ($isMatchingRoute) {
+            // La route actuelle correspond à l'un des préfixes
+           return true;
+        } else {
+            // La route actuelle ne correspond à aucun des préfixes
+            return false;
         }
     }
 

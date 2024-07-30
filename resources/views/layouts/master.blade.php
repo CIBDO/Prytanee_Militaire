@@ -95,6 +95,9 @@
             background-color: #f57c00;
             border-color: #ffc181;
         }
+        .dataTables_wrapper .dataTables_paginate {
+            color: white;
+        }
     </style>
 </head>
 

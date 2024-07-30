@@ -137,7 +137,7 @@ h6 {
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(229, 229, 229, 0.75);
-  box-shadow: 0px 10px 20px 0px rgba(229, 229, 229, 0.75);
+  box-shadow: 0px 10px 20px 0px rgb(17 115 73 / 36%)
 }
 /*=============== 2.2 Dropdown ==================*/
 .dropdown .dropdown-menu {
@@ -861,7 +861,7 @@ h6 {
   margin-right: 10px;
 }
 .dataTables_wrapper .dataTables_paginate span a.paginate_button {
-  border: 1px solid #ffae01;
+  border: 1px solid #067349;
   padding: 8px 18px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -870,23 +870,23 @@ h6 {
   box-shadow: none;
 }
 .dataTables_wrapper .dataTables_paginate span a.paginate_button:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#ff9d01), to(#ffae01));
-  background: -webkit-linear-gradient(left, #ff9d01, #ffae01);
-  background: -o-linear-gradient(left, #ff9d01, #ffae01);
-  background: linear-gradient(to right, #ff9d01, #ffae01);
-  border-color: #ffae01;
+  background: -webkit-gradient(linear, left top, right top, from(#067349), to(#067349));
+  background: -webkit-linear-gradient(left, #067349, #067349);
+  background: -o-linear-gradient(left, #067349, #067349);
+  background: linear-gradient(to right, #067349, #067349);
+  border-color: #067349;
 }
 .dataTables_wrapper .dataTables_paginate span .paginate_button.current {
-  background: -webkit-gradient(linear, left top, right top, from(#ff9d01), to(#ffae01));
-  background: -webkit-linear-gradient(left, #ff9d01, #ffae01);
-  background: -o-linear-gradient(left, #ff9d01, #ffae01);
-  background: linear-gradient(to right, #ff9d01, #ffae01);
-  border: 1px solid #ffae01;
+  background: -webkit-gradient(linear, left top, right top, from(#067349), to(#067349));
+  background: -webkit-linear-gradient(left, #067349, #067349);
+  background: -o-linear-gradient(left, #067349, #067349);
+  background: linear-gradient(to right, #067349, #067349);
+  border: 1px solid #067349;
   padding: 8px 18px;
 }
 .dataTables_wrapper .dataTables_paginate span .paginate_button.current:hover {
-  background: transparent;
-  border-color: #ffae01;
+  background: #044d2e;
+  border-color: #067349;
 }
 /*=============== 3.2 Full Calender ==================*/
 .fc-calender .fc-header-toolbar .fc-left {
@@ -1217,7 +1217,7 @@ h6 {
   background: #026740;
 }
 .btn-hover-yellow:hover {
-  background: #ff9d01;
+  background: #067349;
 }
 /*=======================================================================
 5. PAGE LAYOUT STYLE
@@ -1504,7 +1504,7 @@ ul {
   outline: none;
 }
 .nav-bar-header-two {
-  background: linear-gradient(to right, #ff9d01, #ffeb3b);
+  background: linear-gradient(to right, #067349, #ffeb3b);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2378,7 +2378,7 @@ ul {
   transition: all 0.3s ease-out;
 }
 .single-info-details .item-content .item-header .header-elements ul li a:hover {
-  background-color: #ff9d01;
+  background-color: #067349;
   color: #fff;
 }
 .single-info-details .item-content p {
@@ -3485,7 +3485,7 @@ ul {
   background-color: #ffffff !important;
 }
 .bg-ash {
-  background-color: #f0f1f3 !important;
+  background-color: #ffffff !important;
 }
 .bg-red {
   background-color: #ff0000;
@@ -3593,7 +3593,7 @@ ul {
   background: linear-gradient(to right, #1565c0, #314ce0);
 }
 .btn-gradient-yellow {
-  background-color: #ffae01;
+  background-color: #067349;
 }
 .gradient-dodger-blue {
   background: -webkit-gradient(linear, left top, right top, from(#2196f3), to(#21bff3));

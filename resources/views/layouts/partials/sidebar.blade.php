@@ -1,3 +1,6 @@
+@php
+    use App\Helpers\Helpers;
+@endphp
 <!-- Sidebar Area Start Here -->
 <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color" style="height: 100%;">
     <div class="mobile-sidebar-header d-md-none">
@@ -8,24 +11,16 @@
     <div class="sidebar-menu-content">
         <ul class="nav nav-sidebar-menu sidebar-toggle-view">
             <li class="nav-item sidebar-nav-item @if(in_array(Request::route()->getName(),['dashboard.admin','dashboard.eleves','dashboard.parents','dashboard.enseignants']))active @endif">
-                <a href="#" class="nav-link"><i class="flaticon-dashboard"></i><span>Tableau de bord</span></a>
-                <ul class="nav sub-group-menu"  @if(in_array(Request::route()->getName(),['dashboard.admin','dashboard.eleves','dashboard.parents','dashboard.enseignants']))
+                <a href="#" class="nav-link"><i class="flaticon-dashboard"></i><span>Gestion de Portail</span></a>
+                <ul class="nav sub-group-menu"  @if(Helpers::isMatchingRoute(['dashboard.','articles.']))
                     style="display: block;"
                     @endif>
                     <li class="nav-item">
                         <a href="{{route('dashboard.admin')}}" class="nav-link @if(Request::route()->getName()=='dashboard.admin') menu-active @endif"><i class="fas fa-angle-right"></i>Administrateur</a>
                     </li>
-{{--                    <li class="nav-item">--}}
-{{--                        <a href="index3.html" class="nav-link"><i--}}
-{{--                                class="fas fa-angle-right"></i>Élèves</a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a href="" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a href="index5.html" class="nav-link"><i--}}
-{{--                                class="fas fa-angle-right"></i>Enseignants</a>--}}
-{{--                    </li>--}}
+                    <li class="nav-item">
+                        <a href="{{route('articles.index')}}" class="nav-link @if(Helpers::isMatchingRoute(['articles.'])) menu-active @endif"><i class="fas fa-angle-right"></i>Gestion des articles</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item sidebar-nav-item @if(in_array(Request::route()->getName(),['eleves.inscription','eleves.index','eleves.create','eleves.show','inscriptions.index']))active @endif">
