@@ -103,10 +103,10 @@
 <!-- Preloader Start Here -->
 <div id="preloader"></div>
 <!-- Preloader End Here -->
-<div id="wrapper" class="wrapper bg-ash">
+<div id="wrapper" class="wrapper bg-ash" style="height: 100%;">
 @include('layouts.partials.header')
     <!-- Page Area Start Here -->
-    <div class="dashboard-page-one">
+    <div class="dashboard-page-one" style="height: 100%;">
         @include('flash-toastr::message')
       @include('layouts.partials.sidebar')
         <div class="dashboard-content-one">
