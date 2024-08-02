@@ -37,6 +37,11 @@
                     style="display: block;"
                     @endif>
                     <li class="nav-item">
+                        <a href="{{route('inscriptions.index')}}" class="nav-link @if(Helpers::isMatchingRoute(['inscriptions.'])) menu-active @endif">
+                            <i class="fas fa-angle-right"></i>Inscription
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{route('eleves.index')}}" class="nav-link @if(Helpers::isMatchingRoute(['eleves.'])) menu-active @endif">
                             <i class="fas fa-angle-right"></i>Liste des inscrits
                         </a>
@@ -57,11 +62,6 @@
 {{--                            Formulaire d'Admission--}}
 {{--                        </a>--}}
 {{--                    </li>--}}
-                    <li class="nav-item">
-                        <a href="{{route('inscriptions.index')}}" class="nav-link @if(Helpers::isMatchingRoute(['inscriptions.'])) menu-active @endif">
-                            <i class="fas fa-angle-right"></i>Inscription
-                        </a>
-                    </li>
 {{--                    <li class="nav-item">--}}
 {{--                        <a href="{{route('eleves.paiement')}}" class="nav-link @if(Request::route()->getName()=='eleves.paiement') menu-active @endif">--}}
 {{--                            <i class="fas fa-angle-right"></i>--}}
@@ -350,10 +350,10 @@
 
                 </ul>
             </li>
-            <li class="nav-item sidebar-nav-item @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.']))active @endif">
+            <li class="nav-item sidebar-nav-item @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.', 'pays.']))active @endif">
                 <a href="#" class="nav-link"><i class="flaticon-settings"></i><span>Divers</span></a>
                 <ul class="nav sub-group-menu"
-                    @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.']))
+                    @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.', 'pays.']))
                                                    style="display: block;"
                 @endif>
                     <li class="nav-item">
@@ -374,6 +374,12 @@
                          @if(Helpers::isMatchingRoute(['matieres.'])) menu-active @endif
                         "><i class="fas fa-angle-right"></i>Les
                             Matières</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('pays.index')}}" class="nav-link
+                         @if(Helpers::isMatchingRoute(['pays.'])) menu-active @endif
+                        "><i class="fas fa-angle-right"></i>Les
+                            Pays</a>
                     </li>
                 </ul>
             </li>

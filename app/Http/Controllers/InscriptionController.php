@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Classe;
 use App\Models\Etudiant;
 use App\Models\Inscription;
+use App\Models\ParentEleve;
+use App\Models\Pays;
 use App\Models\Periode;
 use DateTime;
 use Illuminate\Http\Request;
@@ -21,6 +23,8 @@ class InscriptionController extends Controller
             'classes' => Classe::all(),
             'periodes' => Periode::all(),
             'inscriptions' => Inscription::all(),
+            'parents' => ParentEleve::all(),
+            'pays'=>Pays::all(),
         ]);
     }
 
@@ -37,6 +41,26 @@ class InscriptionController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'eleve' => 'required_if:flexCheckChecked,false|exists:eleves,id',
+            'prenom' => 'required_if:flexCheckChecked,true|string|max:255',
+            'nom' => 'required_if:flexCheckChecked,true|string|max:255',
+            'genre' => 'required_if:flexCheckChecked,true|string|in:Garçon,Fille',
+            'date_naissance' => 'required_if:flexCheckChecked,true|date_format:d/m/Y',
+            'pays' => 'required_if:flexCheckChecked,true|exists:pays,id',
+            'classe' => 'required|exists:classes,id',
+            'groupe_sanguin' => 'required_if:flexCheckChecked,true|string|in:A+,A-,B+,B-,O+,O-',
+            'religion' => 'required_if:flexCheckChecked,true|string|in:Islam,Chrétien,Hindou,Bouddhiste,Autres',
+            'email' => 'required_if:flexCheckChecked,true|email|max:255',
+            'parent' => 'required_if:flexCheckChecked,true|exists:parents,id',
+            'telephone' => 'required_if:flexCheckChecked,true|string|max:20',
+            'biographie' => 'required_if:flexCheckChecked,true|string',
+            'photo' => 'required_if:flexCheckChecked,true|image|mimes:jpeg,png,jpg|max:2048',
+            'periode' => 'required|exists:periodes,id',
+            'date_inscription' => 'required|date_format:d/m/Y',
+            'frais' => 'required|numeric',
+        ]);
+        dd($request->all());
         $inscription = new Inscription();
         $inscription->id_eleve = $request->eleve;
         $inscription->id_classe = $request->classe;

@@ -60,13 +60,14 @@
 
     <link rel="stylesheet" href="{{asset('datatable/css/jquery.dataTables.min.css')}}">
     <link rel="stylesheet" href="{{asset('datatable/css/buttons.dataTables.min.css')}}">
+
     @yield('add-css')
     <style>
         button.dt-button, div.dt-button, a.dt-button, input.dt-button {
 
             color: white;
             background-color: rgba(0, 0, 0, 0.1);
-            background: linear-gradient(to bottom, rgb(15, 60, 99) 0%, rgb(15, 60, 99) 100%);
+            background: linear-gradient(to bottom, rgb(14 103 64) 0%, rgb(17 115 73) 100%);
         }
         button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled), input.dt-button:hover:not(.disabled) {
             background: linear-gradient(to bottom, rgb(255, 174, 1) 0%, rgb(255, 174, 1) 100%);
@@ -184,7 +185,7 @@
                 [10, 25, 50, 'All'],
             ],
             language: {
-                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/fr-FR.json',
+                url: '{{asset('datatable/fr-FR.json')}}',
             },
             dom: 'Bfrtip',
             buttons: [
@@ -201,7 +202,7 @@
                 [10, 25, 50, 'All'],
             ],
             language: {
-                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/fr-FR.json',
+                url: '{{asset('datatable/fr-FR.json')}}',
             },
             dom: 'Bfrtip',
             buttons: [
@@ -218,7 +219,7 @@
                 [10, 25, 50, 'All'],
             ],
             language: {
-                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/fr-FR.json',
+                url: '{{asset('datatable/fr-FR.json')}}',
             },
             dom: 'Bfrtip',
             buttons: [

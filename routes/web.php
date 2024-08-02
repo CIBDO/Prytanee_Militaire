@@ -22,6 +22,7 @@ use App\Http\Controllers\ClasseController;
 use App\Http\Controllers\CompteController;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PaysController;
 use App\Http\Controllers\PeriodeController;
 use App\Http\Controllers\ProfilController;
 use Illuminate\Support\Facades\Route;
@@ -68,6 +69,7 @@ Route::resource('notes', NoteController::class);
 Route::resource('parents', ParentController::class);
 Route::resource('periodes', PeriodeController::class);
 Route::resource('examens', ExamenController::class);
+Route::resource('pays', PaysController::class);
 
 Route::resource('eleves', EtudiantController::class)->parameters(['eleves'=>'eleve']);
 Route::resource('messages', MessageController::class)->middleware('auth');
