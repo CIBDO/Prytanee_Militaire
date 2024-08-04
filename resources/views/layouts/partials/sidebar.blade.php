@@ -297,7 +297,7 @@
 {{--                        class="flaticon-chat"></i><span>Messeage</span></a>--}}
 {{--            </li>--}}
             <li class="nav-item sidebar-nav-item @if(in_array(Request::route()->getName(),['messages.reception','messages.envoi','messages.create']))active @endif">
-                <a href="#" class="nav-link"><i class="flaticon-chat"></i><span>Messages</span></a>
+                <a href="#" class="nav-link"><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i><span>Messages</span></a>
                 <ul class="nav sub-group-menu"
                     @if(in_array(Request::route()->getName(),['messages.reception','messages.envoi','messages.create']))
                         style="display: block;"
@@ -327,10 +327,10 @@
 {{--                <a href="map.html" class="nav-link"><i--}}
 {{--                        class="flaticon-planet-earth"></i><span>Carte</span></a>--}}
 {{--            </li>--}}
-            <li class="nav-item sidebar-nav-item @if(Helpers::isMatchingRoute(['comptes.', 'enseignants.']))active @endif">
+            <li class="nav-item sidebar-nav-item @if(Helpers::isMatchingRoute(['comptes.', 'enseignants.','parents.']))active @endif">
                 <a href="#" class="nav-link"><i class="flaticon-multiple-users-silhouette"></i><span>Gestion des utilisateurs</span></a>
                 <ul class="nav sub-group-menu"
-                    @if(Helpers::isMatchingRoute(['comptes.', 'enseignants.']))
+                    @if(Helpers::isMatchingRoute(['comptes.', 'enseignants.','parents.']))
                                                    style="display: block;"
                 @endif>
 
@@ -339,7 +339,7 @@
                             <i class="fas fa-angle-right"></i>Utilisateurs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('parents.index')}}" class="nav-link"><i class="fas fa-angle-right"></i>Les parents d'élèves</a>
+                        <a href="{{route('parents.index')}}" class="nav-link  @if(Helpers::isMatchingRoute(['parents.'])) menu-active @endif"><i class="fas fa-angle-right"></i>Les parents d'élèves</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('enseignants.index')}}" class="nav-link
@@ -351,7 +351,7 @@
                 </ul>
             </li>
             <li class="nav-item sidebar-nav-item @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.', 'pays.']))active @endif">
-                <a href="#" class="nav-link"><i class="flaticon-settings"></i><span>Divers</span></a>
+                <a href="#" class="nav-link"><i class="flaticon-settings-work-tool"></i><span>Divers</span></a>
                 <ul class="nav sub-group-menu"
                     @if(Helpers::isMatchingRoute(['profils.','periodes.', 'matieres.', 'classes.', 'pays.']))
                                                    style="display: block;"

@@ -16,7 +16,7 @@
 
         <!-- Add Notice Area End Here -->
         <!-- All Notice Area Start Here -->
-        <div class="col-8-xxxl col-12">
+        <div class="col-12-xxxl col-12">
             <div class="card height-auto">
                 <div class="card-body">
                     <div class="heading-layout1">
@@ -28,9 +28,9 @@
                                 <h3>Renseignements relatifs aux parents</h3>
                             </div>
                            <div class="dropdown">
-                                <a class="dropdown-toggle" href="#" role="button" 
+                                <a class="dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-expanded="false">...</a>
-        
+
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Fermer</a>
                                     <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Editer</a>
@@ -62,12 +62,12 @@
                         <th class="sorting_asc" rowspan="1" colspan="1" aria-label="IDENTIFIANT" style="width: 85.7969px;">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input checkAll">
-                                        <label class="form-check-label">Roll</label>
+                                        <label class="form-check-label">ID</label>
                                     </div>
                                 </th>
-                                <th>Nom</th>
                                 <th>Prénom</th>
-                                <th>Genre</th>
+                                <th>Nom</th>
+                                <th>Enfants</th>
                                 <th>Fonction</th>
                                 <th>Adresse</th>
                                 <th>Contact</th>
@@ -84,10 +84,10 @@
                                             <label class="form-check-label">#{{$parent->id}}</label>
                                         </div>
                                     </td>
-                                    <td>{{$parent->nom}}</td>
                                     <td>{{$parent->prenom}}</td>
-                                    <td>{{$parent->sexe}}</td>
-                                    <td>{{$parent->occupation}}</td>
+                                    <td>{{$parent->nom}}</td>
+                                    <td>{{$parent->enfants()->count()}}</td>
+                                    <td>{{$parent->fonction}}</td>
                                     <td>{{$parent->adresse}}</td>
                                     <td>{{$parent->telephone}}</td>
                                     <td>{{$parent->email}}</td>
@@ -98,7 +98,14 @@
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
 
-                                                <a class="dropdown-item" onclick=" return confirm('Voulez-vous vraiment supprimer cette ligne ?')" href="{{route('parents.delete',['id'=>$parent->id])}}"><i class="fas fa-times text-orange-red"></i>Supprimer</a>
+                                                <!-- Delete Parent Action -->
+                                                <form action="{{ route('parents.destroy', ['parent' => $parent->id]) }}" method="POST" style="display:inline;" onsubmit="return confirm('Voulez-vous vraiment supprimer cette ligne ?');">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="dropdown-item" style="background: none; border: none; padding: 0;">
+                                                        <i class="fas fa-times text-orange-red"></i> Supprimer
+                                                    </button>
+                                                </form>
                                                 <a class="dropdown-item" href="{{route('parents.edit',['parent'=>$parent->id])}}"><i class="fas fa-cogs text-dark-pastel-green"></i>Modifier</a>
                                             </div>
                                         </div>
@@ -114,5 +121,6 @@
             </div>
         </div>
         <!-- All Notice Area End Here -->
+    </div>
     </div>
 @stop

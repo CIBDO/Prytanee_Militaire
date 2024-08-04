@@ -16,4 +16,13 @@ class ParentEleve extends Model
         // Calculer et retourner la valeur de l'attribut
         return $this->prenom . ' ' . $this->nom;
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+    public  function enfants(){
+        return $this->hasMany(Etudiant::class, 'id_parent');
+    }
+
 }

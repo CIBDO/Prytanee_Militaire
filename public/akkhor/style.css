@@ -2050,7 +2050,7 @@ ul {
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item > .nav-link {
   position: relative;
-  padding: 12px 25px;
+  padding: 12px 12px;
 }
 .sidebar-menu-one .sidebar-menu-content .nav-sidebar-menu > .nav-item > .nav-link i:before {
   color: #ffeb3b;
