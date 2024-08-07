@@ -29,7 +29,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="logo">
                         <a href="/">
-                            <img src="frontend/images/logo_p.png" alt="Logo" width="280" height="80">
+                            <img src="frontend/images/logo_p.png" alt="Logo" width="80" height="80">
                         </a>
                     </div>
                 </div>
